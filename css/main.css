@@ -76,6 +76,22 @@ input[type="search"]::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
+:focus::-webkit-input-placeholder {
+  font-size: 0;
+}
+
+:focus::-moz-placeholder {
+  font-size: 0;
+}
+
+:focus:-moz-placeholder {
+  font-size: 0;
+}
+
+:focus:-ms-input-placeholder {
+  font-size: 0;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -570,6 +586,7 @@ section .new__title {
   width: 34px;
   height: 30px;
   margin: 14px 9px 0 0;
+  cursor: pointer;
 }
 
 .product__like.active {
@@ -583,6 +600,7 @@ section .new__title {
 
 .new__bottom_title {
   font-size: 20px;
+  color: #000;
 }
 
 .new__bottom_row span {
@@ -965,7 +983,7 @@ footer nav ul li:last-child {
   margin-right: 108px;
 }
 
-.footer__inner .footer__column:nth-child(4n) {
+.footer__inner .footer__column:nth-child(4) {
   margin: 0 100px;
 }
 
@@ -1064,6 +1082,7 @@ footer nav ul li:last-child {
 
 .product.active .product__bottom_container {
   display: flex;
+  align-items: center;
 }
 
 .product.active .product__stars img {
@@ -1075,7 +1094,7 @@ footer nav ul li:last-child {
   font-family: 'Tenor Sans', serif;
   font-size: 26px;
   line-height: 32px;
-  margin: 16px 56px 0 0;
+  margin-right: 56px;
 }
 
 .product.active .product__cost {
@@ -1251,6 +1270,7 @@ footer nav ul li:last-child {
 .product__title {
   font-size: 20px;
   margin-top: 5px;
+  color: #000;
 }
 
 .product__stars {
@@ -1370,7 +1390,6 @@ footer nav ul li:last-child {
     border-radius:10px;
 }
 
-
 .polzunok__inputs_container {
   display: flex;
   margin-bottom: 20px;
@@ -1378,4 +1397,177 @@ footer nav ul li:last-child {
 
 .polzunok__inputs_container input:first-child {
   margin-right: 15px;
+}
+
+
+.account-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 66px 0 160px 0;
+}
+
+section .account-title {
+  margin-bottom: 18px;
+}
+
+.account-login__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.account-login__inputs input {
+  border: none;
+  border-radius: 4px;
+}
+
+.account-input-text {
+  width: 390px;
+  height: 54px;
+  background-color: #ECECEC;
+  font-size: 18px;
+  padding-left: 17px;
+  color: #929292;
+}
+
+.account-input-text:focus {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  caret-color: #929292;
+}
+
+.account-login__inputs div:nth-child(2) {
+  margin: 18px 0 32px 0;
+  position: relative;
+}
+
+.account-login__inputs_enter {
+  width: 244px;
+  height: 65px;
+  background-color: #9EAC31;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.account-login__register {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.account-login__register a {
+  color: #55721E;
+  text-decoration: underline;
+}
+
+.quick-registration {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quick-registration__title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.quick-registration__icons {
+  display: flex;
+  align-items: center;
+}
+
+.quick-registration__icons a {
+  margin-right: 17px;
+}
+
+.quick-registration__icons a:last-child {
+  margin-right: 0;
+}
+
+.account-login__inputs img {
+  position: absolute;
+  right: 18px;
+  top: 15.5px;
+  cursor: pointer;
+}
+
+.account-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 66px 0 160px 0;
+}
+
+.account-registration__info-1 {
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 614px;
+}
+
+.account-registration__info-2 {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 498px;
+}
+
+.account-registration__inputs {
+  margin: 44px 0 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-registration__inputs input {
+  border: none;
+  border-radius: 4px;
+}
+
+.account-registration__inputs div {
+  margin-bottom: 18px;
+}
+
+.account-registration__inputs div:first-child {
+  margin-bottom: 28px;
+}
+
+.account-registration__inputs div:last-child {
+  margin-bottom: 0;
+}
+
+.account-registration__inputs div:nth-child(6) {
+  margin-top: 10px;
+}
+
+.account-registration__inputs div:nth-child(7) {
+  position: relative;
+}
+
+.account-registration__inputs img {
+  position: absolute;
+  right: 18px;
+  top: 15.5px;
+  cursor: pointer;
+}
+
+.account-registration__title_small {
+  font-size: 20px;
+  color: #55721E;
+}
+
+.account-registration__inputs_enter {
+  width: 390px;
+  height: 65px;
+  background-color: #9EAC31;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
 }

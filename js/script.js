@@ -104,7 +104,7 @@ $(".polzunok-container-5 input").change(function() {
     opt_right = $(".polzunok-5").slider("option", "max"),
     where_left = $(".polzunok-5").slider("values", 0); 
     if (input_left > where_right) { 
-        input_left = where_right; 
+        input_left = where_right;
     }
     if (input_left < opt_left) {
         input_left = opt_left; 
