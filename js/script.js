@@ -33,23 +33,7 @@ $(document).ready(function(){
           parent.classList.add('accordion-item--active');
       }
     }))
-
-
-/*  accTrigger = document.querySelectorAll('.accordion-item__trigger');
-
-  accTrigger.forEach((item) => 
-    item.addEventListener('click', () => {
-
-      accContent = document.querySelectorAll('.accordion-item__content');
-
-      if(accContent.style.maxHeight) {
-        accContent.forEach((el) => el.style.maxHeight = null)
-
-      } else {
-        accContent.forEach((el) => el.style.maxHeight = null)
-        accContent.style.maxHeight = content.scrollHeight + 'px'
-      }
-    }))*/
+  
 
     $(function() {
       $('.product__like').click(function() {
@@ -130,4 +114,71 @@ $(".polzunok-container-5 input").change(function() {
         $(".polzunok-5").slider("values", 1, input_right);
     }
 });
+
+
+    /*let calculate = document.getElementById("calculation");
+    let count = document.getElementById("buttonCountNumber");
+    calculation = document.getElementById("calculation").innerHTML;
+
+    document.getElementById("buttonCountPlus").onclick = function() {
+      let countPlus = count.innerHTML;
+      if(+countPlus <= 9){
+        count.innerHTML++;
+        let countPlus = count.innerHTML;
+        calculate.innerHTML = calculations(countPlus) ;
+      }
+    }
+
+    document.getElementById("buttonCountMinus").onclick = function() {
+      let countMinus = count.innerHTML;
+      if(+countMinus >= 2){
+        count.innerHTML--;
+        let countMinus = count.innerHTML;
+        calculate.innerHTML = calculations(countMinus) ;
+      }
+    }*/
+
+    /*calculations = (count) => {
+      return calculation+` * ${count} = ` + (+count)*(+calculation);
+    }*/
+
+
+    /*let count = document.getElementById("buttonCountNumber");
+    $(function() {
+      $('#buttonCountPlus').click(function() {
+        let countPlus = count.innerHTML;
+        if(+countPlus <= 9){
+          count.innerHTML++;
+          let countPlus = count.innerHTML;
+        }
+      });
+    });
+
+    $(function() {
+      $('#buttonCountMinus').click(function() {
+        let countMinus = count.innerHTML;
+        if(+countMinus >= 2){
+          count.innerHTML--;
+          let countMinus = count.innerHTML;
+        }
+      });
+    });*/
+
+
+
+  document.querySelectorAll('.account__button_trigger').forEach((item) =>
+    item.addEventListener('click', () => {
+      const parent = item.parentNode;
+
+      if (parent.classList.contains('account__button--active')) {
+        parent.classList.remove('account__button--active');
+      }
+      else {
+        document
+          .querySelectorAll('.account__button')
+          .forEach((child) => child.classList.remove('account__button--active'))
+
+          parent.classList.add('account__button--active');
+      }
+    }))
 });
