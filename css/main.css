@@ -1664,12 +1664,13 @@ section .account-title {
 }
 
 .container__account {
-  max-width: 100%;
+  width: 100%;
 }
 
 .account__inner {
   display: flex;
   justify-content: space-between;
+  height: 964px;
 }
 
 section .account__title {
@@ -1679,15 +1680,17 @@ section .account__title {
 
 .account__left {
   background-color: #F5F3EF;
-  padding: 200px 111px 200px 120px;
+  width: 44.6%;
+  padding: 200px 111px 0 120px;
 }
 
 .account__right {
-  padding: 64px 0 0 77px;
+  padding: 64px 106px 0 77px;
+  width: 86%;
 }
 
 .account__data {
-  width: 456px;
+  max-width: 456px;
   background-color: #fff;
   padding: 36px 32px 67px 36px;
   font-size: 20px;
@@ -1774,6 +1777,7 @@ section .account__title {
   border-radius: 15px;
   margin-bottom: 25px;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .account__button_content {
@@ -1782,6 +1786,7 @@ section .account__title {
   max-width: 450px;
   background-color: #fff;
   border-radius: 0 0 15px 15px;
+  transition-duration: 0.3s;
 }
 
 .account__button--active .account__button_trigger {
@@ -1883,6 +1888,10 @@ section .account__title {
     width: 90px;
     margin-left: 20px;
   }
+
+  .account__left {
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: 1700px) {
@@ -1908,6 +1917,15 @@ section .account__title {
 
   .header__socials {
     margin-bottom: 0;
+  }
+
+  .account__left {
+    padding-left: 100px;
+  }
+
+  .account__right {
+    padding-left: 50px;
+    padding-right: 90px;
   }
 }
 
@@ -1954,6 +1972,10 @@ section .account__title {
 
   .header__catalog {
     margin-right: 15px;
+  }
+
+  .account__right {
+    padding-right: 60px;
   }
 }
 

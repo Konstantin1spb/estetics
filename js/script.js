@@ -18,6 +18,23 @@ $(document).ready(function(){
     slidesToScroll: 4
   });
 
+  document.querySelectorAll('.account__button_trigger').forEach((item) =>
+    item.addEventListener('click', () => {
+      const parent = item.parentNode;
+
+      if (parent.classList.contains('account__button--active')) {
+        parent.classList.remove('account__button--active');
+      }
+      else {
+        document
+          .querySelectorAll('.account__button')
+          .forEach((child) => child.classList.remove('account__button--active'))
+
+          parent.classList.add('account__button--active');
+      }
+    }))
+  
+
   document.querySelectorAll('.accordion-item__trigger').forEach((item) =>
     item.addEventListener('click', () => {
       const parent = item.parentNode;
@@ -166,19 +183,5 @@ $(".polzunok-container-5 input").change(function() {
 
 
 
-  document.querySelectorAll('.account__button_trigger').forEach((item) =>
-    item.addEventListener('click', () => {
-      const parent = item.parentNode;
-
-      if (parent.classList.contains('account__button--active')) {
-        parent.classList.remove('account__button--active');
-      }
-      else {
-        document
-          .querySelectorAll('.account__button')
-          .forEach((child) => child.classList.remove('account__button--active'))
-
-          parent.classList.add('account__button--active');
-      }
-    }))
+  
 });
