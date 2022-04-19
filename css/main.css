@@ -1805,6 +1805,7 @@ section .account__title {
   border-right: 1px solid #9EAC31;
   border-bottom: 1px solid #9EAC31;
   border-left: 1px solid #9EAC31;
+  margin-bottom: 25px;
 }
 
 .account__button_order {
