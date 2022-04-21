@@ -1848,6 +1848,79 @@ section .account__title {
   text-decoration: underline;
 }
 
+.back-link {
+  display: flex;
+  align-items: center;
+  margin-top: 37px;
+}
+
+.back-link a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.back-link a:first-child {
+  margin-right: 14px;
+}
+
+.company {
+  margin-bottom: 160px;
+}
+
+section .company__title {
+  margin: 47px 0 60px 0;
+}
+
+.company-block-1 {
+  margin-bottom: 109px;
+}
+
+.company-block {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.company__text_title {
+  font-size: 25px;
+  color: #55721E;
+  margin-bottom: 20px;
+}
+
+.company__text {
+  width: 50%;
+}
+
+.company__text p:first-child {
+  margin-bottom: 35px;
+}
+
+.company__text ul li {
+  position: relative;
+}
+
+.company__text_content-m {
+  margin-bottom: 35px;
+}
+
+.company__text_content-m ul li:before {
+  content: url(../images/company/list-style-check-mark.png);
+  position: absolute;
+  top: 3px;
+  left: -37px;
+}
+
+.company__text_content-c ul li:before {
+  content: url(../images/company/list-style-circle.png);
+  position: absolute;
+  left: -23px;
+  top: -1px;
+}
+
+/*.company__text_content ul li {
+  list-style-image: url(../images/company/list-style-image.png);
+}*/
+
 /* МЕДИА ЗАПРОСЫ НАЧАЛО */
 
 @media (max-width: 1923px) {
