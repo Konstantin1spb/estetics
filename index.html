@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="body">
 	<header>
 		<div class="header__top">
 			<div class="container">
@@ -28,8 +28,8 @@
 							<a href="#"><li>Акции и скидки</li></a>
 							<a href="#"><li>Доставка и оплата</li></a>
 							<a href="#"><li>Обучение</li></a>
-							<a href="#"><li>Статьи</li></a>
-							<a href="#"><li>Контакты</li></a>
+							<a href="posts.html"><li>Статьи</li></a>
+							<a href="contacts.html"><li>Контакты</li></a>
 						</ul>
 					</nav>
 					<div class="header__socials">
@@ -45,7 +45,7 @@
 						</a>	
 					</div>
 					<div class="header__account">
-						<a href="#">
+						<a href="login.html">
 							<div class="account__person"><img src="images/header/account-icon.png" alt="person"></div>
 							<div class="account__text">Вход / Регистрация</div>
 						</a>	
@@ -103,9 +103,172 @@
 			</div>	
 		</div>
 		<a href="#" class="header__expired">
-			<span>Товары с истекающим сроком годности</span>
+			<span>Товары по акции</span>
 			<div><img src="images/header/arrow-expired.svg" alt="arrow"></div>
 		</a>
+		<div class="catalog-tabs">
+			<div class="container">
+				<div class="catalog-tabs__container">
+					<div class="catalog-tabs__nav">
+						<div class="catalog-tabs__btn" data-catTab="#catTab_1">Акции этой недели</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_2">Новинки</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_3">Товары с ограниченным сроком годности</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_4">Косметологическая продукция</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_5">Мезотерапия</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_6">Контурная пластика</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_7">Косметический уход</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_8">Парафинотерапия</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_9">Депиляция</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_10">Массаж / Spa-уход / Обертывание</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_11">Косметика для волос</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_12">Все для ресниц и бровей</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_13">Инструменты и оборудование</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_14">Одноразовая продукция</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_15">Дезинфицирующие средства</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_16">Учебное пособие</div>
+						<div class="catalog-tabs__btn" data-catTab="#catTab_17">Маникюр / педикюр</div>
+					</div>
+					<div class="catalog-tabs__content">
+						<div class="catalog-tabs__item" id="catTab_1">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_2">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_3">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_4">
+							<div class="catalog-tabs__accordion">
+								<div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Маски для лица и тела
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											<ul>
+												<li><a href="#">Очищающие маски</a></li>
+												<li><a href="#">Альгинатные (пластифицирующие) маски</a></li>
+												<li><a href="#">Маски на основе гиалуроновой кислоты</a></li>
+												<li><a href="#">Маски для жирной и проблемной кожи</a></li>
+												<li><a href="#">Омолаживающие маски</a></li>
+												<li><a href="#">Маски для глаз и век</a></li>
+												<li><a href="#">Маски для волос</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Очищающие средства
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Кремы для лица и тела
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Апператные гели
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Тоники
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Сыворотки и концетраты
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Расходные материалы в косметологии
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Косметические наборы для ухода за кожей
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+									<div class="catalog-tabs__accordion_item">
+										<div class="catalog-tabs__accordion_trigger">
+											Неинвазивная (безинъекционная) Карбокситерапия
+										</div>
+										<div class="catalog-tabs__accordion_content">
+											Текст
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-tabs__item" id="catTab_5">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_6">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_7">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_8">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_9">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_10">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_11">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_12">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_13">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_14">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_15">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_16">
+							
+						</div>
+						<div class="catalog-tabs__item" id="catTab_17">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
 	</header>
 	<section class="first-slider">
 		<div class="first-slider__slide">
@@ -114,7 +277,7 @@
 					Еженедельная скидка 5% на товары<br>по спецпредложениям
 				</h1>
 				<div class="first-slider__cta">
-					<a href="#" class="first-slider__catalog">Перейти в каталог</a>
+					<a href="catalog.html" class="first-slider__catalog">Перейти в каталог</a>
 					<a href="#" class="first-slider__sales">Акции и скидки</a>
 				</div>
 			</div>	
@@ -163,17 +326,20 @@
 			<h2 class="title new__title">Новинки</h2>
 			<div class="new__slider">
 				<div class="new__slide">
-					<div class="new__top product__top-1">
-						<div class="product__info">new</div>
-						<div class="new__top_stars top__stars">
-							<span>
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-							</span>
-						</div>
+					<div class="new__top">
+						<img src="images/product/product-image-1.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
 					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
@@ -186,17 +352,20 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-2">
-						<div class="product__info">new</div>
-						<div class="new__top_stars top__stars">
-							<span>
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-							</span>
-						</div>
+					<div class="new__top">
+						<img src="images/product/product-image-2.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
 					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
@@ -209,17 +378,20 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-3">
-						<div class="product__info">new</div>
-						<div class="new__top_stars top__stars">
-							<span>
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-							</span>
-						</div>
+					<div class="new__top">
+						<img src="images/product/product-image-3.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
 					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
@@ -232,17 +404,20 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-4">
-						<div class="product__info">new</div>
-						<div class="new__top_stars top__stars">
-							<span>
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-							</span>
-						</div>
+					<div class="new__top">
+						<img src="images/product/product-image-1.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
 					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
@@ -255,17 +430,20 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-2">
-						<div class="product__info">new</div>
-						<div class="new__top_stars top__stars">
-							<span>
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-								<img src="images/product/star-icon.svg" alt="star">
-							</span>
-						</div>
+					<div class="new__top">
+						<img src="images/product/product-image-2.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
 					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
@@ -286,7 +464,8 @@
 			<div class="week__slider_container">
 				<div class="week__slider">
 					<div class="week__slide">
-						<div class="week__top product__top-1">
+						<div class="week__top">
+							<img src="images/product/product-image-1.jpg" alt="product">
 							<div class="week__top_stars top__stars">
 								<span>
 									<img src="images/product/star-icon.svg" alt="star">
@@ -308,7 +487,8 @@
 						</div>
 					</div>
 					<div class="week__slide">
-						<div class="week__top product__top-2">
+						<div class="week__top">
+							<img src="images/product/product-image-2.jpg" alt="product">
 							<div class="week__top_stars top__stars">
 								<span>
 									<img src="images/product/star-icon.svg" alt="star">
@@ -330,7 +510,8 @@
 						</div>
 					</div>
 					<div class="week__slide">
-						<div class="week__top product__top-3">
+						<div class="week__top">
+							<img src="images/product/product-image-3.jpg" alt="product">
 							<div class="week__top_stars top__stars">
 								<span>
 									<img src="images/product/star-icon.svg" alt="star">
@@ -352,7 +533,8 @@
 						</div>
 					</div>
 					<div class="week__slide">
-						<div class="week__top product__top-4">
+						<div class="week__top">
+							<img src="images/product/product-image-1.jpg" alt="product">
 							<div class="week__top_stars top__stars">
 								<span>
 									<img src="images/product/star-icon.svg" alt="star">
@@ -374,7 +556,8 @@
 						</div>
 					</div>
 					<div class="week__slide">
-						<div class="week__top product__top-2">
+						<div class="week__top">
+							<img src="images/product/product-image-2.jpg" alt="product">
 							<div class="week__top_stars top__stars">
 								<span>
 									<img src="images/product/star-icon.svg" alt="star">
@@ -404,7 +587,21 @@
 			<h2 class="title new__title">Хиты продаж</h2>
 			<div class="new__slider">
 				<div class="new__slide">
-					<div class="new__top product__top-1"></div>
+					<div class="new__top">
+						<img src="images/product/product-image-1.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
+					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
 						<div class="new__bottom_row">
@@ -416,7 +613,21 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-2"></div>
+					<div class="new__top">
+						<img src="images/product/product-image-2.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
+					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
 						<div class="new__bottom_row">
@@ -428,7 +639,21 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-3"></div>
+					<div class="new__top">
+						<img src="images/product/product-image-3.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
+					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
 						<div class="new__bottom_row">
@@ -440,7 +665,21 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-4"></div>
+					<div class="new__top">
+						<img src="images/product/product-image-1.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
+					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
 						<div class="new__bottom_row">
@@ -452,7 +691,21 @@
 					</div>
 				</div>
 				<div class="new__slide">
-					<div class="new__top product__top-2"></div>
+					<div class="new__top">
+						<img src="images/product/product-image-2.jpg" alt="product">
+						<div class="product__marks">
+							<div class="product__info">new</div>
+							<div class="new__top_stars top__stars">
+								<span>
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+									<img src="images/product/star-icon.svg" alt="star">
+								</span>
+							</div>
+						</div>	
+					</div>
 					<div class="new__bottom">
 						<a href="#" class="new__bottom_title">Сыворотка для лица</a>
 						<div class="new__bottom_row">
@@ -477,7 +730,7 @@
 					<div>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
-					<div><a href="#">Читать далее</a></div>
+					<div><a href="company.html">Читать далее</a></div>
 				</div>
 			</div>
 		</div>
@@ -500,7 +753,7 @@
 			<div class="articles__inner">
 				<div class="articles__left">
 					<h2 class="title articles__title">Статьи</h2>
-					<a href="#">Читать статьи</a>
+					<a href="posts.html">Читать статьи</a>
 				</div>
 				<div class="articles__right">
 					<article>
@@ -547,11 +800,11 @@
 				<div class="footer__column">
 					<nav>
 						<ul>
-							<li><a href="#">О компании</li></a>
+							<li><a href="company.html">О компании</li></a>
 							<li><a href="#">Помощь покупателю</li></a>
 							<li><a href="#">Лицензия</li></a>
 							<li><a href="#">Карта сайта</li></a>
-							<li><a href="#">Контакты</li></a>
+							<li><a href="contacts.html">Контакты</li></a>
 							<li><a href="#">Политика компании</li></a>
 						</ul>
 					</nav>
