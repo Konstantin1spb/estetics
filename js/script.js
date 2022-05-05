@@ -179,6 +179,19 @@ document.addEventListener('DOMContentLoaded', function(){
             parent.classList.add('accordion-item--active');
         }
       }))
+
+
+    const catalogFilterBtnMob = document.querySelector(".catalog__filters_button_mob");
+    const catalogFilterMob = document.querySelector(".catalog__filters");
+    const catalogFilterBtnMobClose = document.querySelector(".catalog__filters_top_mob_img");
+
+    catalogFilterBtnMob.addEventListener('click', () => {
+      catalogFilterMob.classList.add('active');
+    })
+
+    catalogFilterBtnMobClose.addEventListener('click', () => {
+      catalogFilterMob.classList.remove('active');
+    })
   }
 
 
