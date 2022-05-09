@@ -1230,7 +1230,7 @@ footer nav ul li:last-child {
 }
 
 .product.active .product__bottom {
-  height: 220px;
+  height: auto; /*b!*/
   width: 100%;
   background-color: #fff;
   border-radius: 0 4px 4px 0;
@@ -3191,9 +3191,9 @@ section .popular-category__title {
     font-size: 16px;
   }
 
-  .product, .product__top, .product__bottom {
-    width: 280px;
-  }
+  /*.product, .product__top, .product__bottom {
+    width: 280px; b!
+  }*/
 
   .product__title {
     font-size: 18px;
@@ -3495,7 +3495,7 @@ section .popular-category__title {
 
   .product.active .product__bottom {
     padding: 14px 15px 19px 14px;
-    height: 168px;
+    height: auto; /*b!*/
   }
 
   .product.active .product__stars {
@@ -3552,9 +3552,9 @@ section .popular-category__title {
     width: 21px;
   }
 
-  .product__top, .product__bottom {
-    width: 100%;
-  }
+  /*.product__top, .product__bottom {
+    width: 100%; b!
+  }*/
 
   .product__top {
     height: 175px;
