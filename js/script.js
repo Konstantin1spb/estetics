@@ -18,10 +18,32 @@ $(document).ready(function(){
     slidesToShow: 4,
     slidesToScroll: 4
   });
+
+  $('.popular-category__slider').slick({
+    //autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1130,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
   
 
     $(function() {
       $('.product__like').click(function() {
+      $(this).toggleClass('active');
+      });
+    });
+
+    $(function() {
+      $('.product-card__like').click(function() {
       $(this).toggleClass('active');
       });
     });
@@ -213,4 +235,53 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }))
   }
+
+
+  let productCardCheck = document.querySelector(".product-card__tabs");
+  if (productCardCheck != null) {
+    const prodCardTabsBtn   = document.querySelectorAll(".product-card__tabs_btn");
+    const prodCardTabsItems = document.querySelectorAll(".product-card__tabs_item");
+
+      prodCardTabsBtn.forEach(onProdCardTabClick);
+
+      function onProdCardTabClick(item) {
+        item.addEventListener("click", function() {
+            let currentBtn = item;
+            let tabId = currentBtn.getAttribute("data-prodCardTab");
+            let currentTab = document.querySelector(tabId);
+
+            if( ! currentBtn.classList.contains('active') ) {
+                prodCardTabsBtn.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+        
+                prodCardTabsItems.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+        
+                currentBtn.classList.add('active');
+                currentTab.classList.add('active');
+            }
+        });
+      }
+
+      document.querySelector('.product-card__tabs_btn').click();
+
+
+      document.querySelectorAll('.product-card__accordion_trigger').forEach((item) =>
+      item.addEventListener('click', () => {
+        const parent = item.parentNode;
+
+        if (parent.classList.contains('product-card__accordion_item--active')) {
+          parent.classList.remove('product-card__accordion_item--active');
+        }
+        else {
+          document
+            .querySelectorAll('.product-card__accordion_item')
+            .forEach((child) => child.classList.remove('product-card__accordion_item--active'))
+
+            parent.classList.add('product-card__accordion_item--active');
+        }
+      }))
+  }    
 });
