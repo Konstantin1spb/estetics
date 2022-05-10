@@ -270,10 +270,27 @@
 			</div>
 		</div>		
 	</header>
+	<div class="header-mob">
+		<div class="container">
+			<div class="header-mob__row">
+				<div class="header-mob__burger">
+					<span></span>
+				</div>
+				<div class="header-mob__logo"><a href="index.html"><img src="images/mobile/logo-mob.svg" alt="logo"></a></div>
+				<div class="header-mob__search"><img src="images/mobile/search-icon.png" alt="search"></div>
+			</div>
+		</div>	
+		<div class="header-mob__row">
+			<div><img src="images/mobile/phone-icon.png" alt="phone-call"></div>
+			<div><img src="images/mobile/like-icon.png" alt="liked"></div>
+			<div><img src="images/mobile/basket-icon.png" alt="basket"></div>
+			<div><img src="images/mobile/account-icon.png" alt="account"></div>
+		</div>	
+	</div>
 	<section class="shopping-cart">
 		<div class="container">
 			<div class="shopping-cart__inner">
-				<h2 class="title">Корзина товаров</h2>
+				<h2 class="title shopping-cart__title">Корзина товаров</h2>
 				<div class="shopping-cart__titles">
 					<div>Наименование</div>
 					<div class="shopping-cart__numbers">
@@ -288,22 +305,25 @@
 						<div class="shopping-cart__image">
 							<img src="images/cart/product-image.png" alt="product">
 						</div>
+					</div>	
+					<div class="shopping-cart__info_container-2">
 						<div class="shopping-cart__name">
 							Тоник для лица Увлажняющий, 150 мл - Plazan Россия
 						</div>
-					</div>	
-					<div class="shopping-cart__info_container-2">
-						<div class="shopping-cart__price">
-							<div class="shopping-cart__price_new">312 ₽</div>
-							<div class="shopping-cart__price_old">325 ₽</div>
-						</div>
-						<div class="shopping-cart__quantity">
-							<input type="button" id="buttonCountMinus" value="-">
-							<div id="buttonCountNumber">1</div>
-							<input type="button" id="buttonCountPlus" value="+">
-						</div>
-						<div class="shopping-cart__amount">312 ₽</div>
-					</div>	
+						<div class="shopping-cart__info__right">
+							<div class="shopping-cart__price">
+								<div class="shopping-cart__price_new">312 ₽</div>
+								<div class="shopping-cart__price_old">325 ₽</div>
+							</div>
+							<div class="shopping-cart__quantity">
+								<input type="button" id="buttonCountMinus" value="-">
+								<div id="buttonCountNumber">1</div>
+								<input type="button" id="buttonCountPlus" value="+">
+							</div>
+							<div class="shopping-cart__amount">312 ₽</div>
+						</div>	
+					</div>
+					<div class="shopping-cart-mob__close"><img src="images/mobile/green-cross-icon.svg" alt="close"></div>
 				</div>
 				<hr>
 				<div class="shopping-cart__info">
@@ -311,30 +331,33 @@
 						<div class="shopping-cart__image">
 							<img src="images/cart/product-image.png" alt="product">
 						</div>
+					</div>	
+					<div class="shopping-cart__info_container-2">
 						<div class="shopping-cart__name">
 							Тоник для лица Увлажняющий, 150 мл - Plazan Россия
 						</div>
-					</div>	
-					<div class="shopping-cart__info_container-2">
-						<div class="shopping-cart__price">
-							<div class="shopping-cart__price_new">312 ₽</div>
-							<!-- <div class="shopping-cart__price_old">325 ₽</div> -->
-						</div>
-						<div class="shopping-cart__quantity shopping-cart__quantity_none">
-							<input type="button" id="buttonCountMinus" value="-">
-							<div id="buttonCountNumber">1</div>
-							<input type="button" id="buttonCountPlus" value="+">
-						</div>
-						<div class="shopping-cart__amount">312 ₽</div>
-					</div>	
+						<div class="shopping-cart__info__right">
+							<div class="shopping-cart__price">
+								<div class="shopping-cart__price_new">312 ₽</div>
+								<!-- <div class="shopping-cart__price_old">325 ₽</div> -->
+							</div>
+							<div class="shopping-cart__quantity shopping-cart__quantity_none">
+								<input type="button" id="buttonCountMinus" value="-">
+								<div id="buttonCountNumber">1</div>
+								<input type="button" id="buttonCountPlus" value="+">
+							</div>
+							<div class="shopping-cart__amount">312 ₽</div>
+						</div>	
+					</div>
+					<div class="shopping-cart-mob__close"><img src="images/mobile/green-cross-icon.svg" alt="close"></div>
 				</div>
 				<hr>
 				<div class="shopping-cart__buy">
 					<div>
 						<input type="text" placeholder="Введите код купона для скидки" class="shopping-cart__promo">
-						<div>(можно использовать только один купон)</div>
+						<div class="shopping-cart__buy_note">(можно использовать только один купон)</div>
 					</div>
-					<div>
+					<div class="shopping-cart__buy_container">
 						<div>Подытог: 1149 ₽</div>
 						<div class="shopping-cart__buy_margin">Скидка: 13 ₽</div>
 						<div class="shopping-cart__total">Итого: 1136 ₽</div>
@@ -347,7 +370,7 @@
 	<section class="shopping-application">
 		<div class="container">
 			<div class="shopping-application__inner">
-				<h2 class="title">Оформление заявки</h2>
+				<h2 class="title shopping-application__title">Оформление заявки</h2>
 				<div class="shopping-application__title_small">Ваши данные:</div>
 				<div class="shopping-application__container">
 					<div class="shopping-application__container_row">
