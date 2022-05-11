@@ -402,6 +402,10 @@ header nav ul a {
   transition-duration: 0.2s;
 }
 
+.catalog-tabs a {
+  color: #000;
+}
+
 .catalog-tabs.active {
   z-index: 3;
   opacity: 1;
@@ -1396,6 +1400,7 @@ footer nav ul li:last-child {
 
 .accordion-item--active .accordion-item__content {
   max-height: 300px;
+  overflow-y: scroll;
   margin: 10px 0;
 }
 
@@ -1675,6 +1680,17 @@ section .account-title {
   margin-bottom: 32px;
 }
 
+.account-login__inputs span {
+  font-size: 16px;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  text-align: right;
+}
+
+.account-login__inputs span a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .account-login__inputs input {
   border: none;
   border-radius: 4px;
@@ -1696,7 +1712,7 @@ section .account-title {
 }
 
 .account-login__inputs div:nth-child(2) {
-  margin: 18px 0 32px 0;
+  margin-top: 18px;
   position: relative;
 }
 
@@ -1846,6 +1862,10 @@ section .account-title {
 section .account__title {
   text-align: left;
   margin-bottom: 64px;
+}
+
+.account__title-mob {
+  display: none;
 }
 
 .account__left {
@@ -3062,6 +3082,18 @@ section .popular-category__title {
   .footer__inner .footer__column:nth-child(4) {
     margin: 0;
   }
+
+  .account__left {
+    padding-right: 25px;
+  }
+
+  .account__right {
+    padding-left: 25px;
+  }
+
+  .account__content {
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -3100,7 +3132,19 @@ section .popular-category__title {
   }
 
   .account__right {
-    padding-right: 60px;
+    padding-right: 55px;
+  }
+
+  .account__left {
+    padding-left: 65px;
+  }
+
+  .account__button_trigger {
+    height: 65px;
+  }
+
+  .account__button_trigger {
+    margin-bottom: 15px;
   }
 }
 
@@ -3172,6 +3216,55 @@ section .popular-category__title {
 
   .product-card__tabs_content {
     font-size: 16px;
+  }
+
+  .account__item:nth-child(6) {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .account__data {
+    padding: 36px 37px 44px 37px;
+  }
+
+  section .account__title {
+    margin-bottom: 40px;
+  }
+
+  .account__left {
+    padding-top: 176px;
+  }
+
+  .account__left {
+    padding-left: 60px;
+  }
+
+  .account__data {
+    font-size: 18px;
+  }
+
+  .account__item a {
+    font-size: 14px;
+  }
+
+  .account__button_trigger {
+    font-size: 22px;
+  }
+
+  .account__button_sale {
+    font-size: 18px;
+  }
+
+  .account__button_date {
+    font-size: 14px;
+  }
+
+  .account__button_content .account__button_number a, .account__button_order, .account__button_number {
+    font-size: 16px;
+  }
+
+  .account__button--active .account__button_content {
+    padding: 0 19px 44px 28px;
   }
 }
 
@@ -3515,6 +3608,71 @@ section .popular-category__title {
 
   .week__slider .slick-next {
     right: 35%;
+  }
+
+  .account__item {
+    margin-bottom: 29px;
+  }
+
+  .account__title {
+    display: none;
+  }
+
+  section .account__title-mob {
+    display: block;
+    margin: 48px 0;
+  }
+
+  .account__inner {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  /*.container__account {
+    width: auto;
+    max-width: 91%;
+    margin: 0 auto;
+  }*/
+
+  .account__left, .account__right {
+    width: 100%;
+  }
+
+  .account__left {
+    padding: 35px 0 47px 0;
+  }
+
+  .account__data {
+    width: 91%;
+    margin: 0 auto;
+  }
+
+  .account__right {
+    padding: 0;
+    margin: 34px 0 84px 0;
+  }
+
+  .account__content {
+    flex-direction: column;
+    padding-left: 0;
+    max-width: 91%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .account__buttons {
+    margin-right: 0;
+  }
+
+  .account__button_trigger {
+    margin-bottom: 14px;
+    font-size: 18px;
+    height: 54px;
+  }
+
+  .account__card {
+    margin-top: 14px;
   }
 }
 
@@ -3918,6 +4076,113 @@ section .popular-category__title {
 
   .week__bottom .new__bottom_row span {
     font-size: 32px;
+  }
+
+  .account-input-text {
+    font-size: 14px;
+    width: 262px;
+  }
+
+  section .account-login__inputs_enter {
+    font-size: 18px;
+    border-radius: 8px;
+    width: 192px;
+    height: 56px;
+  }
+
+  .account-login__inputs span {
+    font-size: 12px;
+  }
+
+  .account-login__register {
+    font-size: 12px;
+  }
+
+  .quick-registration__title {
+    font-size: 16px;
+  }
+
+  .account-login {
+    margin: 48px 0 91px 0;
+  }
+
+  section .account-title {
+    margin-bottom: 34px;
+  }
+
+  .account-login__inputs div:nth-child(2) {
+    margin-top: 16px;
+  }
+
+  .account-login__inputs span {
+    margin: 10px 0 15px 0;
+  }
+
+  .quick-registration {
+    margin-top: 40px;
+  }
+
+  .account-login__inputs {
+    margin-bottom: 22px;
+  }
+
+  .quick-registration__icons a {
+    width: 32px;
+    margin-right: 10px;
+  }
+
+  .account-registration {
+    margin: 48px 0 92px 0;
+  }
+
+  section .registration__title-mob {
+    margin-bottom: 18px;
+  }
+
+  .account-registration__info-1 {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 319px;
+  }
+
+  .account-registration__info-2 {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 336px;
+  }
+
+  .account-registration__inputs {
+    margin: 34px 0 24px 0;
+  }
+
+  .account-registration__title_small {
+    font-size: 16px;
+  }
+
+  .account-registration__inputs div:first-child {
+    margin-bottom: 18px;
+  }
+
+  .account-registration__inputs div {
+    margin-bottom: 16px;
+  }
+
+  .account-registration__inputs div:nth-child(6) {
+    margin-top: 8px;
+  }
+
+  .account-registration__inputs div:last-child {
+    margin-top: 4px;
+  }
+
+  section .account-registration__inputs div:last-child input {
+    border-radius: 8px;
+  }
+
+  .account-registration__inputs_enter {
+    width: 262px;
+    height: 56px;
+    font-size: 18px;
   }
 }
 
