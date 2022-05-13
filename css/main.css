@@ -600,6 +600,14 @@ h2.title {
   gap: 4px;
 }
 
+.popular__row_hidden {
+  display: none;
+}
+
+.popular__row_hidden.active {
+  display: flex;
+}
+
 .popular__item {
   max-width: 480px;
   position: relative;
@@ -618,12 +626,11 @@ h2.title {
   max-width: 50%;
 }
 
-.popular__button {
-  display: flex;
-  justify-content: center;
+.popular__item a {
+  color: #000;
 }
 
-.popular__button a {
+.popular__button {
   width: 376px;
   height: 79px;
   color: rgba(0, 0, 0, 0.4);
@@ -633,7 +640,33 @@ h2.title {
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  margin: 0 auto;
+  cursor: pointer;
 }
+
+.popular__button span {
+  display: none;
+}
+
+.popular__button.active span {
+  display: block;
+}
+
+.popular__button.active div {
+  display: none;
+}
+
+/*.popular__button a {
+  width: 376px;
+  height: 79px;
+  color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}*/
 
 section .new__title {
   margin-bottom: 31px;
@@ -3172,6 +3205,10 @@ section .popular-category__title {
   .popular__item {
     max-width: 436px;
   }
+
+  .popular__item span {
+    max-width: 55%;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -3414,6 +3451,10 @@ section .popular-category__title {
 
   section.popular {
     padding: 68px 0 100px 0;
+  }
+
+  .popular__item span {
+    max-width: 52%;
   }
 }
 
@@ -3821,8 +3862,8 @@ section .popular-category__title {
     margin: 90px 0 84px 0;
   }
 
-  .popular__services .popular__row:last-child {
-    display: none;
+  .posts__container {
+    justify-content: center;
   }
 }
 
@@ -4344,9 +4385,10 @@ section .popular-category__title {
     line-height: 27px;
     top: 26px;
     left: 26px;
+    max-width: 54%;
   }
 
-  .popular__button a {
+  .popular__button {
     font-size: 16px;
     width: 238px;
     height: 51px;
@@ -4428,6 +4470,18 @@ section .popular-category__title {
 
   .new__slider .slick-arrow {
     background: url(../images/first-slider/arrow-controller-mob.svg) no-repeat center transparent;
+  }
+
+  section.posts {
+    margin: 48px 0 82px 0;
+  }
+
+  section .posts__title {
+    margin-bottom: 40px;
+  }
+
+  section.posts article {
+    margin-bottom: 46px;
   }
 }
 

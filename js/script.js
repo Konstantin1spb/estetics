@@ -85,7 +85,34 @@ $(document).ready(function(){
       $('.product-card__like').click(function() {
       $(this).toggleClass('active');
       });
+    });  
+
+
+    $(function() {
+      $('.popular__button').click(function() {
+      $('.popular__row_hidden').toggleClass('active');
+      $(this).toggleClass('active');
+      });
     });
+
+    function checkWidth() {
+      var windowWidth = $('body').innerWidth(),
+          elem = $(".popular__row_multi"); // лучше сохранять объект в переменную, многократно чтобы не насиловать 
+                                        // страницу для поиска нужного элемента
+      if(windowWidth < 1130){
+        elem.addClass('popular__row_hidden');
+      }
+      else{
+        elem.removeClass('popular__row_hidden');
+      }
+    }
+
+    checkWidth(); // проверит при загрузке страницы
+
+    $(window).resize(function(){
+      checkWidth(); // проверит при изменении размера окна клиента
+    });
+
 
 
     $(".polzunok-5").slider({
