@@ -349,5 +349,66 @@ document.addEventListener('DOMContentLoaded', function(){
             parent.classList.add('product-card__accordion_item--active');
         }
       }))
-  }    
+  }
+
+
+  let deliveryCheck = document.querySelector(".delivery__tabs");
+  if (deliveryCheck != null) {
+    const deliveryTabsBtn   = document.querySelectorAll(".delivery__tabs_btn");
+    const deliveryTabsItems = document.querySelectorAll(".delivery__tabs_item");
+
+      deliveryTabsBtn.forEach(onDeliveryTabClick);
+
+      function onDeliveryTabClick(item) {
+        item.addEventListener("click", function() {
+            let currentBtn = item;
+            let tabId = currentBtn.getAttribute("data-deliveryTab");
+            let currentTab = document.querySelector(tabId);
+
+            if( ! currentBtn.classList.contains('active') ) {
+                deliveryTabsBtn.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+        
+                deliveryTabsItems.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+        
+                currentBtn.classList.add('active');
+                currentTab.classList.add('active');
+            }
+        });
+      }
+
+      document.querySelector('.delivery__tabs_btn').click();
+
+
+    const deliveryPaymentTabsBtn   = document.querySelectorAll(".delivery-payment__tabs_btn");
+    const deliveryPaymentTabsItems = document.querySelectorAll(".delivery-payment__tabs_item");
+
+      deliveryPaymentTabsBtn.forEach(onDeliveryPaymentTabClick);
+
+      function onDeliveryPaymentTabClick(item) {
+        item.addEventListener("click", function() {
+            let currentBtn = item;
+            let tabId = currentBtn.getAttribute("data-deliveryPaymentTab");
+            let currentTab = document.querySelector(tabId);
+
+            if( ! currentBtn.classList.contains('active') ) {
+                deliveryPaymentTabsBtn.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+        
+                deliveryPaymentTabsItems.forEach(function(item) {
+                    item.classList.remove('active');
+                });
+        
+                currentBtn.classList.add('active');
+                currentTab.classList.add('active');
+            }
+        });
+      }
+
+      document.querySelector('.delivery-payment__tabs_btn').click();
+  }
 });
