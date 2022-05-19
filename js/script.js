@@ -12,7 +12,7 @@ $(document).ready(function(){
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1360,
+        breakpoint: 1130,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1
@@ -35,7 +35,7 @@ $(document).ready(function(){
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1360,
+        breakpoint: 1130,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1
